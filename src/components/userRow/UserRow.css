@@ -1,0 +1,354 @@
+.user-row {
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    background: rgba(30, 38, 47, 1);
+
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-right: 73px;
+
+}
+
+.photo {
+    width: 39.68px;
+    height: 40px;
+    margin: 18px 18.32px 18px 11px;
+    padding: 2px;
+    display: flex;
+}
+
+.photo>img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info>.name {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+
+.user-info>.email {
+    font-size: 10px;
+    color: rgba(189, 188, 190, 1);
+
+}
+
+.details {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.steps-container,
+.nutri-container {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.workout-container {
+    margin: 10px 67px;
+    display: flex;
+    align-items: center;
+}
+
+.dates {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.date-cont {
+    display: flex;
+    width: 75px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 2px 5px;
+    margin: 3px 0px;
+
+}
+
+.d-1 {
+    margin-bottom: 2px;
+}
+
+.d-2 {
+    margin-top: 2px;
+}
+
+.date {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.icon {
+    height: 19px;
+    width: 19px;
+    margin-right: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon>img {
+    width: 90%;
+}
+
+.arrow-con {
+    margin-left: 15px;
+}
+
+.arrow {
+    cursor: pointer;
+    height: 60px;
+    width: 30px;
+    background: rgba(16, 19, 23, 1);
+    border-radius: 8px;
+}
+
+.arrow>img {
+    width: 50%;
+    object-fit: contain;
+}
+
+.walked-count,
+.nutri-count {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.nutri-count:hover {
+    cursor: pointer;
+
+}
+
+.nutri-container {
+    margin-right: 65px;
+}
+
+.bell-container,
+.bell,
+.walked-count,
+.nutri-container,
+.nutri-count,
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bell-container {
+    width: 100%;
+}
+
+.bell {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #36F5C7;
+}
+
+.bell>img {
+    width: 20px;
+}
+
+.target {
+    display: flex;
+    width: 87px;
+}
+
+
+.circular-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circular-text>.number,
+.target-text>.number {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.circular-text>.number {
+    text-align: center;
+}
+
+.inc,
+.dec {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    border-radius: 4px;
+    background: rgba(16, 19, 23, 1);
+}
+
+.inc {
+    margin-bottom: 5px;
+    overflow: hidden;
+
+}
+
+.dec {
+    margin-top: 6px;
+}
+
+.inc>img,
+.dec>img {
+    padding: 3px;
+    width: 100%;
+    height: 16px;
+    object-fit: contain;
+}
+
+.target-text>p {
+    text-align: center;
+}
+
+.circular-text>.text,
+.target-text>.text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+    color: #BDBCBE;
+}
+
+.target-text {
+    width: 32px;
+    height: 70px;
+}
+
+
+@media(max-width:980px) {
+
+    .user {
+        margin-right: 35px;
+    }
+
+    .nutri-container {
+        margin-right: 25px;
+    }
+
+    .workout-container {
+        margin: 10px 40px;
+
+    }
+
+}
+
+
+@media(max-width:850px) {
+
+    .user-row {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .user {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .details {
+        width: 100%;
+        justify-content: flex-start;
+        margin-left: 15px;
+    }
+
+    .nutri-container {
+        margin-right: 15px;
+    }
+
+    .workout-container {
+        margin: 10px 100px;
+    }
+
+    .bell-container {
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+
+}
+
+@media(max-width:770px) {
+    .details {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .steps-container,
+    .workout-container,
+    .nutri-container {
+        width: 100%;
+        justify-content: center;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+
+    .steps-container,
+    .workout-container,
+    .nutri-container,
+    .bell-container {
+        margin: 10px 5px;
+        padding: 5px 0px;
+        width: 40%;
+        justify-content: center;
+    }
+
+    .bell-container {
+        justify-content: flex-start;
+
+    }
+}
+
+@media(max-width:500px) {
+
+    .details {
+        justify-content: flex-start;
+        margin: 10px;
+    }
+
+    .steps-container,
+    .workout-container,
+    .nutri-container {
+        width: 100%;
+    }
+
+
+    .nutri-container {
+        width: 80%;
+    }
+
+    .bell-container {
+        width: 10%;
+        justify-content: flex-start;
+    }
+
+}
